@@ -14,6 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": ".",
     "plugins": [
       {
         "name": "next"
@@ -21,8 +22,8 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@/components": ["./components"], // this is where separate website structures are stored independent of site configuration
-      "@/styles": ["./styles"] // this is where all the styles that are unconnected to component structure are stored
+      "@/components/*": ["components/*"], // this is where separate website structures are stored independent of site configuration
+      "@/styles/*": ["styles/*"] // this is where all the styles that are unconnected to component structure are stored
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
