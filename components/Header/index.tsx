@@ -32,7 +32,7 @@ let NavBar = () =>{
   return <nav className={styles.NavBar}>
     <ul className={styles.navList}>
      {
-      // genereate nav list based incrementally based on available routes
+      // generate nav list based incrementally based on available routes
       navGenerator()
      }
     </ul>

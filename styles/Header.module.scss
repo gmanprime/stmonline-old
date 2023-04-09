@@ -35,10 +35,23 @@
 }
 
 .navList {
+  // top level navigation element
+  padding: 1rem 2rem;
+  width: 15%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  list-style-type: none;
 }
 
 .navLink {
+  // Link wrapper navigation element
+  background-color: green;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  text-align: center;
 }
 
 .navListItem {
+  // list item for nav menu, contains the ul list item
 }
