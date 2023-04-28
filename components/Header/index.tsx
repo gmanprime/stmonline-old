@@ -8,7 +8,6 @@ interface navItems {
 
 let NavBar = () =>{
   //  Nav Component for the website header
-
   // The navItems should be imported based on route structure of the website
   let navList:navItems[] = [
     {
@@ -61,7 +60,8 @@ let ScrollIndicator = () => {
   );
 };
 
-function index() {
+function Header() {
+  
   return (
     <div className={styles.Wrapper}>
       <NavBar />
@@ -70,4 +70,4 @@ function index() {
   );
 }
 
-export default index;
+export default Header;
