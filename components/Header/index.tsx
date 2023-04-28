@@ -18,9 +18,13 @@ let NavBar = () =>{
     {
       Title:"About",
       LinkTo:"/About"
+    },
+    {
+      Title:"Contact Us",
+      LinkTo:"/contact-us"
     }
   ];
-  
+
   let navGenerator = () => {
     return navList.map((navItem,i) =>{
       return <Link href={navItem.LinkTo.toString()} className={styles.navLink} key={i}>
@@ -29,7 +33,7 @@ let NavBar = () =>{
     });
   }
 
-  return <nav className={styles.NavBar}>
+ return <nav className={styles.NavBar}>
     <ul className={styles.navList}>
      {
       // generate nav list based incrementally based on available routes
