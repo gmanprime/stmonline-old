@@ -2,7 +2,7 @@
   // main wrapper component for header element
 
   // background is going to be a darkened Site specific image
-  background: blue;
+  background: gray;
 
   // Component is going to have a full screen splash header with a scroll indicator at the bottom
   // scroll indicator will scroll 100% of screen on click
@@ -29,7 +29,7 @@
 }
 
 .NavBar {
-  background-color: rgba(0, 0, 0, 0.453);
+  background-color: transparent;
   height: 3.5rem;
   width: 100%;
   display: flex;
@@ -51,9 +51,12 @@
 .navLink {
   // Link wrapper navigation element
   width: 6rem;
-  background-color: green;
+  background-color: transparent;
   border-radius: 1rem;
   margin: 0 1rem;
+  & .active {
+    background-color: whitesmoke;
+  }
 }
 
 .navListItem {

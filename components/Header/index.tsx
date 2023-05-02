@@ -4,6 +4,7 @@ import Link from "next/link"
 interface navItems {
   Title: String,
   LinkTo: String,
+  isActive: boolean
 }
 
 let NavBar = () =>{
@@ -12,15 +13,18 @@ let NavBar = () =>{
   let navList:navItems[] = [
     {
       Title:"Home",
-      LinkTo: "/"
+      LinkTo: "/",
+      isActive: true,
     },
     {
       Title:"About",
-      LinkTo:"/About"
+      LinkTo:"/About",
+      isActive: false,
     },
     {
       Title:"Contact Us",
-      LinkTo:"/contact-us"
+      LinkTo:"/contact-us",
+      isActive: false,
     }
   ];
 
