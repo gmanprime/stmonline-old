@@ -54,9 +54,11 @@
   background-color: transparent;
   border-radius: 1rem;
   margin: 0 1rem;
-  & .active {
-    background-color: whitesmoke;
-  }
+}
+
+.activeNav {
+  color: black;
+  background-color: whitesmoke;
 }
 
 .navListItem {

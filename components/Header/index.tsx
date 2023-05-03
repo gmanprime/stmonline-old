@@ -1,50 +1,5 @@
 import styles from "@/styles/Header.module.scss";
-import Link from "next/link"
-
-interface navItems {
-  Title: String,
-  LinkTo: String,
-  isActive: boolean
-}
-
-let NavBar = () =>{
-  //  Nav Component for the website header
-  // The navItems should be imported based on route structure of the website
-  let navList:navItems[] = [
-    {
-      Title:"Home",
-      LinkTo: "/",
-      isActive: true,
-    },
-    {
-      Title:"About",
-      LinkTo:"/About",
-      isActive: false,
-    },
-    {
-      Title:"Contact Us",
-      LinkTo:"/contact-us",
-      isActive: false,
-    }
-  ];
-
-  let navGenerator = () => {
-    return navList.map((navItem,i) =>{
-      return <Link href={navItem.LinkTo.toString()} className={styles.navLink} key={i}>
-          <li className={styles.navListItem}>{navItem.Title}</li>
-      </Link>
-    });
-  }
-
- return <nav className={styles.NavBar}>
-    <ul className={styles.navList}>
-     {
-      // generate nav list based incrementally based on available routes
-      navGenerator()
-     }
-    </ul>
-  </nav>
-}
+import NavBar from "@components/Header/nav"
 
 let ScrollIndicator = () => {
   // This is a narrow strip at the bottom edge of the header element that has an

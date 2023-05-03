@@ -1,6 +1,6 @@
 import NavBar from "@components/Header/nav"
 
-function About() {
+function Contact() {
   return (
     <main>
       <NavBar />
@@ -8,4 +8,4 @@ function About() {
   )
 }
 
-export default About
+export default Contact
