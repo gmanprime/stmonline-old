@@ -22,7 +22,7 @@ let NavBar = () =>{
   ];
   
   let navGenerator = () => {
-    return navList.map((navItem,i) =>{
+    return navList.map((navItem,i) => {
       return <Link href={navItem.LinkTo.toString()} className={styles.navLink} key={i}>
           <li className={styles.navListItem}>{navItem.Title}</li>
       </Link>
