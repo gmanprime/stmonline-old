@@ -14,7 +14,7 @@ interface navItems {
 let NavBar = () =>{
   //  Nav Component for the website header
 
-  // router element from nextjs for finding current route path
+  // router element from next JS for finding current route path
   const currentPath = usePathname();
 
   // The navItems should be imported based on route structure of the website
