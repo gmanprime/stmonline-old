@@ -1,6 +1,9 @@
 import styles from "@/styles/Header.module.scss";
 import NavBar from "@components/Header/nav"
 
+// other imports
+import HeaderBackground from "@public/HeaderBackgroundGradient.png"
+
 let ScrollIndicator = () => {
   // This is a narrow strip at the bottom edge of the header element that has an
   // indicator to scroll down (icon indicator) that can be clicked to scroll
@@ -22,7 +25,12 @@ let ScrollIndicator = () => {
 function Header() {
   
   return (
-    <div className={styles.Wrapper}>
+    <div className={styles.Wrapper} style={
+      {
+        backgroundImage: `url(${HeaderBackground.src})`,
+        backdropFilter: 'blur(16px)'
+      }
+    }>
       <NavBar />
       <ScrollIndicator />
     </div>

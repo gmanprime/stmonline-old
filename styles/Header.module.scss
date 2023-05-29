@@ -1,8 +1,11 @@
+@import "_def.scss";
+
 .Wrapper {
   // main wrapper component for header element
-
   // background is going to be a darkened Site specific image
-  background: gray;
+  //  -> background is being handled in the Typescript code on js
+
+  background-size: cover;
 
   // Component is going to have a full screen splash header with a scroll indicator at the bottom
   // scroll indicator will scroll 100% of screen on click
@@ -16,15 +19,14 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 3vh;
-  background: white;
+  height: 5vh;
   position: absolute;
   bottom: 0;
 }
 
 .ScrollIcon {
   background-color: red;
-  width: 3rem;
+  width: 6vh;
   height: 100%;
 }
 
@@ -50,10 +52,17 @@
 
 .navLink {
   // Link wrapper navigation element
-  width: 6rem;
+  width: fit-content;
   background-color: transparent;
   border-radius: 1rem;
   margin: 0 1rem;
+  padding: 0.5rem  1rem;
+
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  text-shadow: black;
 }
 
 .activeNav {
