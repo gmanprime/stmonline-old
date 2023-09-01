@@ -4,7 +4,7 @@ import NavBar from "@components/Header/nav"
 // other imports
 import HeaderBackground from "@public/HeaderBackgroundGradient.png"
 
-let ScrollIndicator = () => {
+let ScrollIndicator = () => { 
   // This is a narrow strip at the bottom edge of the header element that has an
   // indicator to scroll down (icon indicator) that can be clicked to scroll
   // down to the next section of the page.
@@ -17,7 +17,7 @@ let ScrollIndicator = () => {
 
   return (
     <div className={styles.scrollIndicator}>
-      <ScrollIcon />
+      <ScrollIcon />  
     </div>
   );
 };
