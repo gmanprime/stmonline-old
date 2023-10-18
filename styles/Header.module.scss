@@ -10,7 +10,7 @@
   // Component is going to have a full screen splash header with a scroll indicator at the bottom
   // scroll indicator will scroll 100% of screen on click
   width: 100%;
-  height: 100vh;
+  height: 30vh;
 }
 
 .scrollIndicator {
@@ -19,14 +19,14 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 5vh;
+  height: 3vh;
   position: absolute;
   bottom: 0;
 }
 
 .ScrollIcon {
   background-color: red;
-  width: 6vh;
+  width: 3vh;
   height: 100%;
 }
 
